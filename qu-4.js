@@ -1,4 +1,4 @@
-function getCngFare(distance, isNight, waitingMinutes) {
+const getCngFare = (distance, isNight, waitingMinutes) => {
   if (isNight === undefined) {
     isNight = false;
   }
@@ -21,6 +21,6 @@ function getCngFare(distance, isNight, waitingMinutes) {
   }
 
   return totalFare;
-}
+};
 const result = getCngFare(5);
 console.log(result);
