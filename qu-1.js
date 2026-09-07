@@ -1,4 +1,4 @@
-function describeValue(val) {
+const describeValue = (val) => {
   var valueType = typeof val;
   var status = "";
 
@@ -9,6 +9,4 @@ function describeValue(val) {
   }
 
   return valueType + " | " + status;
-}
-const result1 = describeValue("");
-console.log(result1);
+};
